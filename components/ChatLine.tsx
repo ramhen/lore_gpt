@@ -54,27 +54,18 @@ export function ChatLine({ role = 'assistant', content }: ChatGPTMessage) {
         role != 'assistant' ? 'float-right clear-both' : 'float-left clear-both'
       }
     >
-      <BalancerWrapper>
-        <div className="float-right mb-5 rounded-lg bg-white px-4 py-5 shadow-lg ring-1 ring-zinc-100 sm:px-6">
+        <div className="float-right mb-5 rounded-lg bg-zinc-800 px-4 py-5 shadow-lg ring-1 ring-zinc-700 sm:px-6">
           <div className="flex space-x-3">
             <div className="flex-1 gap-4">
-              <p className="font-large text-xxl text-gray-900">
-                <a href="#" className="hover:underline">
-                  {role == 'assistant' ? 'AI' : 'You'}
-                </a>
+              <p className="font-large text-xxl text-zinc-400 font-semibold mb-2">
+                  {role == 'assistant' ? 'Lorebot' : 'You'}
               </p>
-              <p
-                className={clsx(
-                  'text ',
-                  role == 'assistant' ? 'font-semibold font- ' : 'text-gray-400'
-                )}
-              >
+              <p className="text font-normal">
                 {formatteMessage}
               </p>
             </div>
           </div>
         </div>
-      </BalancerWrapper>
     </div>
   )
 }

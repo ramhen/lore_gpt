@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   presets: [require('@vercel/examples-ui/tailwind')],
   content: [
@@ -5,4 +6,13 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './node_modules/@vercel/examples-ui/**/*.js',
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        'basis': ['"Basis Grotesque Pro"', ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
 }
