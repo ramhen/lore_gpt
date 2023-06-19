@@ -46,3 +46,4 @@ The app should be up and running at http://localhost:3000.
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=edge-middleware-eap) ([Documentation](https://nextjs.org/docs/deployment)).
 # lore_gpt
+# lore_gpt
