@@ -9,7 +9,7 @@ const COOKIE_NAME = 'nextjs-example-ai-chat-gpt3'
 export const initialMessages: ChatGPTMessage[] = [
   {
     role: 'assistant',
-    content: 'Hi, I am lorebot, I can help you find any insights related to the World of Warcraft universe, just tell me what are you interested in knowing:',
+    content: 'Hi I am lorebot, I can help you find any insights related to the World of Warcraft universe, just tell me what are you interested in knowing:',
   },
 ]
 
@@ -123,7 +123,7 @@ export function Chat() {
 
       {messages.length < 2 && (
         <span className="mx-auto flex flex-grow text-gray-300 clear-both">
-          Ask something like "Is there evidence of Kil'Jaeden manipulating a Naaru?"
+          Ask something like Is there evidence of Kil Jaeden manipulating a Naaru?
         </span>
       )}
       <InputMessage
