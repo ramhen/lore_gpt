@@ -123,7 +123,7 @@ export function Chat() {
 
       {messages.length < 2 && (
         <span className="mx-auto flex flex-grow text-gray-300 clear-both">
-          Ask something like Is there evidence of Kil Jaeden manipulating a Naaru?
+          Ask something like if there is evidence of Kil Jaeden manipulating a Naaru
         </span>
       )}
       <InputMessage
